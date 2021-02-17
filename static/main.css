@@ -20,6 +20,7 @@ body {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
+
 /* Navbar  */
 
 .navbar {
@@ -44,11 +45,13 @@ body {
     margin: 0 1rem;
     padding: 1rem;
     font-size: 1.5rem;
+    
 }
 
 .navbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
+    color: #efefef !important;
 }
 
 .navbar a:hover {
@@ -82,8 +85,8 @@ section p {
 #projects {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 15rem 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15rem 230px 1fr;
 }
 
 #projects h1 {
@@ -103,17 +106,17 @@ section p {
 }
 
 .subtitle {
-   text-decoration: none;
+   /* text-decoration: none; */
 }
 a {
     text-decoration: none;
-    color: #efefef   !important; 
+    color: #1d1d1d   !important; 
 } 
 
 /* Projects */
 
 .portfolio-item-wrapper {
-    height: 350px;
+    height: 20rem;
     width: 33vw;
     background-size: cover;
     background-position: center;
@@ -124,9 +127,23 @@ a {
     display: none;
 }
 
+/* Blog Section */
+#blogs {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15rem 1fr 1fr;
+}
+
+#blogs h1 {
+    margin: 0;
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
 /* Background images for section */
 
-section#home {
+/* section#home {
     background: url(https://images.unsplash.com/photo-1595876290257-da90d70ef5d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80) no-repeat center center/cover;
 }
 
@@ -145,4 +162,4 @@ section#about {
 section#contact {
     background: url(https://images.unsplash.com/photo-1507400492013-162706c8c05e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8bmlnaHR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60) no-repeat center/cover;
 
-}
+} */
