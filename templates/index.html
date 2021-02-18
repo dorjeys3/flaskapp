@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-        <title>Dorjey Sherpa</title>
+        <title>Dorjey Sherpa • Data Scientist</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="static/main.css">
@@ -10,7 +11,7 @@
 
     <body>
         <div class="container">
-            
+            <!-- START NAV BAR -->
             <nav class="navbar">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -18,61 +19,115 @@
                     <li><a href="#blogs">Blogs</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul>
+
+                </ul>        
             </nav>
-                
+            <!-- END NAV BAR     -->
+
+            <!-- START HOME SECTION -->
             <section id="home">
                 <h1>Welcome To My Page</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!</p>
+                <!-- <div class="home-background">
+                    <img src="static/images/ind-rotate.jpeg" alt=""> 
+                </div> -->
+                <p>I am a Data Scientist </p>
+                <p>Not a WebDev</p>
+                <p>WebDev is hard</p>            
             </section>
-
+            <!-- END HOME SECTION -->
+            
+            <!-- START PROJECTS SECTION -->
             <section id="projects">
                 <h1>Here are some projects</h1>
-
                 <div class="content-wrapper">
-            
-                    <a href="https://github.com/dorjeys3/Walmart_proj" target="_blank"><div class="portfolio-item-wrapper" style="background-image:url(static/images/walmart.png)">
-                        <!-- <div class="portfolio-img-background" style="background-image:url(static/images/walmart.png)"></div> -->
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="static/images/logos/github-logo.png" alt="">
+                    <div class="portfolio-items-wrapper">
+                        <a href="https://github.com/dorjeys3/Walmart_proj" target="_blank"><div class="portfolio-item-wrapper" style="background-image:url(https://i.pinimg.com/originals/b0/45/af/b045af8a94343e3b1fdbf1576e9818b8.gif)">
+                            <div class="img-text-wrapper">                           
+                                <p class="subtitle">
+                                    Using Natural Language Processing, Machine Learning models were able to predict which items would be recommened items based on customers' reviews.
+                                </p>
                             </div>
+                        </div></a>
 
-                            <p class="subtitle">
-                                Using Natural Language Processing, a machine learning model was able to predict which items would be recommened items based on customers' reviews.
-                            </p>
+
+                        <a href="https://github.com/dorjeys3/twitter_sentiment_analysis" target="_blank"><div class="portfolio-item-wrapper" style="background-image:url(https://cdn.dribbble.com/users/1161517/screenshots/7896076/apple-logo-animation.gif)">
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="static/images/github-logo.jpeg" alt ="">
+                                </div>
+
+                                <p class="subtitle">
+                                    Used Natural Language Tool Kit, we anazlyzed all of 2020 Apple events (3 major events) via Twitter using Twint.
+                                </p>
+                            </div>
+                        </div></a>
+
+
+                        <a href="https://github.com/dorjeys3/Hotel-Cancellation-Model" target="_blank"><div class="portfolio-item-wrapper"style="background-image:url(https://media3.giphy.com/media/xT0xenntJ5zPXwRI4w/source.gif)">
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="static/images/logos/github-logo.png" alt ="">
+                                </div>
+
+                                <p class="subtitle">
+                                    Created a model to predict hotel reservation cancelation.
+                                </p>
+                            </div>
+                        </div></a>
+
+                        <div class="portfolio-item-wrapper"style="background-image:url(static/images/hotel.jpeg)">
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="static/images/logos/github-logo.png" alt ="">
+                                </div>
+
+                                <p class="subtitle">
+                                    Created a model to predict hotel reservation cancelation.
+                                </p>
+                            </div>
                         </div>
-                    </div></a>
 
+                        <div class="portfolio-item-wrapper"style="background-image:url(static/images/hotel.jpeg)">
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="static/images/logos/github-logo.png" alt ="">
+                                </div>
 
-                    <div class="portfolio-item-wrapper" style="background-image:url(static/images/apple-one-more.jpg)">
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="static/images/logos/github-logo.png">
+                                <p class="subtitle">
+                                    Created a model to predict hotel reservation cancelation.
+                                </p>
                             </div>
+                        </div>
 
-                            <p class="subtitle">
-                                Used Natural Language Tool Kit, we anazlyzed all of 2020 Apple events (3 major events) via Twitter using Twint.
-                            </p>
+                        <div class="portfolio-item-wrapper"style="background-image:url(static/images/hotel.jpeg)">
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="static/images/logos/github-logo.png" alt ="">
+                                </div>
+
+                                <p class="subtitle">
+                                    Created a model to predict hotel reservation cancelation.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-item-wrapper"style="background-image:url(static/images/hotel.jpeg)">
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="static/images/logos/github-logo.png" alt ="">
+                                </div>
+
+                                <p class="subtitle">
+                                    Created a model to predict hotel reservation cancelation.
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-
-                    <div class="portfolio-item-wrapper"style="background-image:url(static/images/hotels.jpeg)">
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="static/images/logos/github-logo.png">
-                            </div>
-
-                            <p class="subtitle">
-                                Created a model to predict hotel reservation cancelation.
-                            </p>
-                        </div>
-                    </div>
-            
                 </div>
             </section>
+            <!-- END PROJECTS SECTION -->
 
+            <!-- START BLOGS SECTION -->
             <section id="blogs">
                 <h1>These are my blogs</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!5</p>
@@ -80,16 +135,34 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!5</p>
                 <p>ßLorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!5</p>
             </section>
+            <!-- END BLOGS SECTION -->
 
+           <!-- START ABOUT SECTION -->
             <section id="about">
                 <h1>About me</h1>
+                <img src="static/images/headshot.jpeg" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!5</p>
             </section>
+            <!-- END ABOUT SECTION -->
 
+            <!-- START CONTACT SECTION -->
             <section id="contact">
                 <h1>Contact</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!5</p>
             </section>
+            <!-- END CONTACT SECTION -->
         </div>
     </body>
+    <script>
+            const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+                portfolioItems.forEach(portfolioItem => { 
+                    portfolioItem.addEventListener('mouseover', () => {
+                        portfolioItem.childNodes[1].classList.add('img-darken');
+                    })
+
+                    portfolioItem.addEventListener('mouseout', () => {
+                        portfolioItem.childNodes[1].classList.remove('img-darken');
+                })
+            })
+    </script>
 </html>
