@@ -26,13 +26,12 @@
 
             <!-- START HOME SECTION -->
             <section id="home">
-                <h1>Welcome To My Page</h1>
-                <!-- <div class="home-background">
+                <div class="home-background">
                     <img src="static/images/ind-rotate.jpeg" alt=""> 
-                </div> -->
-                <p>I am a Data Scientist </p>
-                <p>Not a WebDev</p>
-                <p>WebDev is hard</p>            
+                </div>
+                <h2 id="left-side-text">I am a Data Scientist </h2>
+                
+                <h2 id="right-side-text">WebDev is hard</h2>            
             </section>
             <!-- END HOME SECTION -->
             
@@ -51,7 +50,7 @@
 
 
                         <a href="https://github.com/dorjeys3/twitter_sentiment_analysis" target="_blank"><div class="portfolio-item-wrapper" style="background-image:url(https://cdn.dribbble.com/users/1161517/screenshots/7896076/apple-logo-animation.gif)">
-                            <div class="img-text-wrapper">
+                            <div class="img-text-wrapper" >
                                 <div class="logo-wrapper">
                                     <img src="static/images/github-logo.jpeg" alt ="">
                                 </div>
@@ -66,7 +65,7 @@
                         <a href="https://github.com/dorjeys3/Hotel-Cancellation-Model" target="_blank"><div class="portfolio-item-wrapper"style="background-image:url(https://media3.giphy.com/media/xT0xenntJ5zPXwRI4w/source.gif)">
                             <div class="img-text-wrapper">
                                 <div class="logo-wrapper">
-                                    <img src="static/images/logos/github-logo.png" alt ="">
+                                    <img src="static/images/github-logo.jpeg" alt ="">
                                 </div>
 
                                 <p class="subtitle">
@@ -99,18 +98,6 @@
                             </div>
                         </div>
 
-                        <div class="portfolio-item-wrapper"style="background-image:url(static/images/hotel.jpeg)">
-                            <div class="img-text-wrapper">
-                                <div class="logo-wrapper">
-                                    <img src="static/images/logos/github-logo.png" alt ="">
-                                </div>
-
-                                <p class="subtitle">
-                                    Created a model to predict hotel reservation cancelation.
-                                </p>
-                            </div>
-                        </div>
-                        
                         <div class="portfolio-item-wrapper"style="background-image:url(static/images/hotel.jpeg)">
                             <div class="img-text-wrapper">
                                 <div class="logo-wrapper">
@@ -130,10 +117,17 @@
             <!-- START BLOGS SECTION -->
             <section id="blogs">
                 <h1>These are my blogs</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!5</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!5</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!5</p>
-                <p>ßLorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!5</p>
+                <div class="blog-content">    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, magni. Itaque cumque dolores autem quaerat!</p>
+                    
+                </div>
             </section>
             <!-- END BLOGS SECTION -->
 
@@ -155,14 +149,20 @@
     </body>
     <script>
             const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
-                portfolioItems.forEach(portfolioItem => { 
-                    portfolioItem.addEventListener('mouseover', () => {
-                        portfolioItem.childNodes[1].classList.add('img-darken');
-                    })
-
-                    portfolioItem.addEventListener('mouseout', () => {
-                        portfolioItem.childNodes[1].classList.remove('img-darken');
+             portfolioItems.forEach(portfolioItem => { 
+                portfolioItem.addEventListener('mouseover', () => {
+                    portfolioItem.childNodes[1].classList.add('img-darken');
                 })
-            })
+
+                portfolioItem.addEventListener('mouseout', () => {
+                    portfolioItem.childNodes[1].classList.remove('img-darken');
+                })
+        })
+                // portfolioItems.addEventListener('mouseover', (e)=>{
+                //     if (e.target.classname == "portfolio-item-wrapper"){
+                //         console.log(e.target)
+                //     }
+                // })
+
     </script>
 </html>
