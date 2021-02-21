@@ -26,7 +26,7 @@ a {
     scroll-snap-type: y mandatory;
 }
 
-/* Navbar  */
+/* ------- Navbar ------- */
 
 .navbar {
     position: fixed;
@@ -56,13 +56,15 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     color: #efefef;
+    justify-content: center;
+    text-align: center;
 }
 
 .navbar a:hover {
     color: lightseagreen !important;
 }
 
-/* Different sections */
+/* ------- Different sections -------  */
 
 section {
     align-items: center;
@@ -82,7 +84,8 @@ section p {
     font-size: 1.5rem;
 } 
 
-/*  Home section */
+/*  ------- Home section ------- */
+
 #home {
     display: grid;
     overflow: hidden;
@@ -91,26 +94,6 @@ section p {
     overflow: hidden;
 }
 
-/* #home h1 {
-    margin: 0;
-    grid-row: 1;
-    grid-column: 1/-1;
-    color: whitesmoke;
-    z-index: 1;
-} */
-
-/* #home .home-background {
-    width: 50%;
-    height: 50%;
-    grid-column: span 3;
-    grid-row: 2;
-    justify-content: center;
-    background-size: cover;
-    align-items: center;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 75px;
-} */
 
 .home-background {
     grid-row: 2;
@@ -140,7 +123,7 @@ section p {
 }
 
 
-/* Project Section */
+/* ------- Project Section ------- */
 
 #projects {
     display: grid;
@@ -158,8 +141,6 @@ section p {
 }
 
 #projects p {
-    /* grid-row: 2;
-    grid-column: span 3; */
     color: #efefef transparent;
 }
 
@@ -175,13 +156,6 @@ section p {
     position: relative;
 }
 
-/* .portfolio-img-background {
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
 
 #projects .img-text-wrapper {
     position: absolute;
@@ -196,19 +170,14 @@ section p {
     padding-left: 0;
     padding-right: 0;
 }
-/* 
-.logo-wrapper img{
-    width:50%;
-    margin-bottom: 20px;
-} */
 
-.img-text-wrapper .subtitle {
+#projects .img-text-wrapper .subtitle {
     transition: 0.25s;
     color: white transparent !important;
     font-weight: 600;
 }
 
-.img-text-wrapper p:hover {
+#projects .img-text-wrapper p:hover {
     font-weight: 600;
     
 }
@@ -216,13 +185,11 @@ section p {
 .img-darken {
     transition: 0.25s;
     filter: brightness(80%);
-    color: rgb(34, 227, 217) !important;
-    /* color: rgb(0, 0, 0) !important; */
+    color: lightseagreen !important;
     background: rgba(0,0,0,0.7);
     background-size: cover;
 }
 
-/* end change */
 
 .portfolio-item-wrapper {
     height: 17rem;
@@ -234,35 +201,80 @@ section p {
 }
 
 
-/* Blogs Section */
+/*  ------- Blogs Section ---------- */
 
 #blogs {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: 15rem 1fr;
+    overflow: hidden;
 }
 
 #blogs h1 {
-    margin: 0;
+    margin: 1px;
+    padding-top: 2rem;
+    padding-bottom: 0;
     grid-row: 1;
     grid-column: 1/-1;
 }
-
-.blog-content{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat (2, 1fr);
-    grid-row: 2;
-    grid-gap: 50px;
-    /* border: #e6e6e6 solid;
-    padding: 5px; */
+#blogs p {
+    color: #efefef transparent;
 }
-/* .blog-content p {
-    grid-ro
-} */
 
-/* About Section */
+#blogs .blog-content{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:repeat (2, 1fr);
+    /* grid-row: span 2; */
+    grid-template: span 4;
+}
+.article-content {
+    position: relative;
+    justify-self: cover;
+    align-self: cover;
+}
+
+
+#blogs .img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+#blogs .img-text-wrapper .subtitle {
+    transition: 0.25s;
+    color: white transparent !important;
+    font-weight: 600;
+}
+
+#blogs .img-text-wrapper:hover {
+    font-weight: 600;
+    transition: 0.2s;
+    filter: brightness(80%);
+    color: lightseagreen !important;
+    background: rgba(0,0,0,0.7);
+    background-size: cover;
+    
+}
+
+.article-content {
+    height: 17rem;
+    width: 25vw;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;    
+}
+
+/* ------- About Section ------- */
 
 #about {
     display: grid;
