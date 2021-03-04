@@ -193,7 +193,7 @@ section p {
 }
 
 #projects .img-text-wrapper .subtitle {
-    transition: 0.25s;
+    transition: 0.2s;
     color: white transparent !important;
     font-weight: 1200;
 }
@@ -204,7 +204,7 @@ section p {
 }
 
 .img-darken {
-    transition: 0.25s;
+    transition: 0.2s;
     filter: brightness(90%);
     color: rgb(255, 255, 255) !important;
     background: rgba(0,0,0,0.85);
@@ -254,7 +254,7 @@ section p {
 
 #blogs .blog-content{
     display: grid;
-    grid-template-columns:repeat(4, 25%);
+    grid-template-columns:repeat(4, 24%);
     grid-template-rows:repeat (2, 1fr);
     grid-template: span 4;
 }
@@ -279,7 +279,7 @@ section p {
     padding-right: 0;
 }
 #blogs .img-text-wrapper .subtitle {
-    transition: 0.25s;
+    transition: 0.2s;
     color: white transparent !important;
     font-weight: 600;
 }
