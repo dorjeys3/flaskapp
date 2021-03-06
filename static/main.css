@@ -157,7 +157,7 @@ section p {
     grid-row: 1;
     grid-column: 1/-1;
     color: black;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 #projects p {
@@ -216,7 +216,7 @@ section p {
 .portfolio-item-wrapper {
     height: 17rem;
     width: 33vw;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     padding: 0px;
@@ -252,11 +252,6 @@ section p {
     grid-template-rows:repeat (2, 1fr);
     grid-template: span 4;
 }
-.article-content {
-    position: relative;
-    justify-self: cover;
-    align-self: cover;
-}
 
 
 #blogs .img-text-wrapper {
@@ -289,10 +284,13 @@ section p {
 .article-content {
     height: 17rem;
     width: 25vw;
-    background-size: 90%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     padding: 0px;    
+    position: relative;
+    justify-self: cover;
+    align-self: cover;
 }
 
 /* ------- About Section ------- */
@@ -371,7 +369,7 @@ section p {
 
 
 /* iPhone and iPad */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) and (min-width: 250px){
 
     .container {
         width: 100%;
@@ -561,7 +559,7 @@ section p {
     #about img {
         grid-column: 1/-1;
         grid-row: 3;
-        width: 80%;
+        width: 50%;
         height: 100%;
         justify-self: center;
         padding-top: 0px;
@@ -574,8 +572,7 @@ section p {
 
 
 /* iPad */
-@media screen and (max-width: 1050px) and (min-width:800px){
-
+@media screen and (max-width: 1000px) and (min-width:750px){
     .navbar ul {
         display: flex;
         flex-direction: row;
@@ -584,15 +581,21 @@ section p {
     }
     
     .navbar ul li {
-        font-size: 2rem;
+        font-size: 0.8rem;
         padding: 1em;
+        margin: 0px;
+    }    
+    
+    .navbar ul li {
+        font-size: auto;
+        padding: 2em;
         margin: 0px;
     }
         /*home */
 
     #home {
         display: grid;
-        overflow: hidden;
+        overflow: scroll;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 15rem 1fr 25rem;
     }
@@ -636,9 +639,193 @@ section p {
     } 
 
     #home p {
-        font-size: 45px;
+        font-size: 35px;
         text-align: center;
         vertical-align: justify;
         
+    }
+
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.75fr 0.5fr 1fr 1fr 0.2fr;
+    }
+    #about h1{
+        grid-row: 1;
+        grid-column: 1;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        padding-top: 5rem;
+        padding-bottom: 0;
+        color: black;
+    }
+
+    #about p{
+        font-family: 'lato', Times, serif;
+        font-size: 18px !important;
+        line-height: 1.4em;
+        grid-row: 3;
+        grid-column: 1/-1;
+        text-align: left;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    #about .contact {
+        grid-column: 2;
+        grid-row: 1;
+        position: relative;
+        transform: translate(-53%, -50);
+        padding-top: 4rem;
+
+    }
+    
+    #about li{
+        list-style: none;
+        display: inline-block;
+        font-size: 18px;
+        color: black;
+        border: 1px solid;
+        border-radius: 25%;
+        transition: .2s;
+    }
+    
+    #about li:hover{
+        color: black;
+        border: 1px solid black;
+        transition: .2s;
+    }
+    #about img {
+        grid-column: 1/-1;
+        grid-row: 2;
+        width: 60%;
+        height: 100%;
+        justify-self: center;
+        padding-top: 0px;
+    }
+
+
+}
+@media screen and (min-width:1000px) and (max-width: 1325px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        scroll-behavior: auto;
+        scroll-snap-type: none;
+    }
+
+    #home {
+        display: grid;
+        overflow: scroll;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 15rem 1fr 25rem;
+    }
+
+    .home-background {
+        grid-row: 2;
+        grid-column: 1/-1;
+        position: relative;
+        justify-content: center;
+        overflow: scroll;
+    }
+    
+    #home img {
+        width: 100vw;
+        height: 50vh;
+        /* padding-top: 40px; */
+    }
+    
+    #home .left-side-text{
+        grid-row: 1;
+        grid-column: 1/-1;
+        font-size: 3rem;
+        position: relative;
+        align-content: center;
+        justify-content: center;
+        padding: 0;
+        padding-top: 4rem;
+    }
+    #home h2 {
+        line-height: 100px;
+    }
+    #home .right-side-text{
+        grid-row: 3;
+        grid-column: 1/-1;
+        padding: 0;
+        position: relative;
+        align-content: center;
+        justify-content: center;
+        vertical-align: top;
+        margin: 0;
+    } 
+
+    #home p {
+        font-size: 35px;
+        text-align: center;
+        vertical-align: justify;
+        
+    }
+
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.75fr 0.5fr 1fr 1fr;
+    }
+    #about h1{
+        font-size: 4rem;
+        grid-row: 1;
+        grid-column: 1/-1;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        padding-top: 5rem;
+        padding-bottom: 0;
+        color: black;
+    }
+
+    #about p{
+        font-family: 'lato', Times, serif;
+        font-size: 30px !important;
+        line-height: 1.4em;
+        grid-row: 3;
+        grid-column: 1/-1;
+        text-align: left;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    #about .contact {
+        grid-column: 1;
+        grid-row: 2;
+        position: relative;
+        transform: translate(-53%, -50);
+        padding-top: 4rem;
+
+    }
+    
+    #about li{
+        list-style: none;
+        display: inline-block;
+        font-size: 18px;
+        color: black;
+        border: 1px solid;
+        border-radius: 25%;
+        transition: .2s;
+    }
+    
+    #about li:hover{
+        color: black;
+        border: 1px solid black;
+        transition: .2s;
+    }
+    #about img {
+        grid-column: 2;
+        grid-row: 2;
+        width: 80%;
+        height: 100%;
+        justify-self: center;
+        padding-top: 0px;
     }
 }
