@@ -170,6 +170,7 @@ section p {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     padding-bottom: 10%;
+    grid-gap: 1px;
 }
 
 .portfolio-item-wrapper{
@@ -189,6 +190,7 @@ section p {
     text-align: center;
     padding-left: 0;
     padding-right: 0;
+
 }
 
 #projects .img-text-wrapper .subtitle {
@@ -246,7 +248,7 @@ section p {
 
 #blogs .blog-content{
     display: grid;
-    grid-template-columns:repeat(4, 24%);
+    grid-template-columns:repeat(4, 25%);
     grid-template-rows:repeat (2, 1fr);
     grid-template: span 4;
 }
