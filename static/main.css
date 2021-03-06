@@ -251,6 +251,7 @@ section p {
     grid-template-columns:repeat(4, 25%);
     grid-template-rows:repeat (2, 1fr);
     grid-template: span 4;
+    grid-gap: 1px;
 }
 
 
