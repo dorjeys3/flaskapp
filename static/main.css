@@ -138,7 +138,6 @@ section p {
     position: relative;
     align-content: center;
     justify-content: center; 
-    
 } 
 
 /* ------- Project Section ------- */
@@ -157,7 +156,7 @@ section p {
     grid-row: 1;
     grid-column: 1/-1;
     color: black;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 #projects p {
@@ -370,7 +369,7 @@ section p {
 
 
 /* iPhone and iPad */
-@media screen and (max-width: 800px) and (min-width: 250px){
+@media screen and (max-width: 800px) and (min-width: 200px){
 
     .container {
         width: 100%;
@@ -424,6 +423,7 @@ section p {
         position: relative;
         align-content: center;
         justify-content: center;
+        text-align: center;
     }
     #home h2 {
         line-height: 100px;
