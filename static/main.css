@@ -462,6 +462,7 @@ section p {
     
     #projects h1 {
         font-size: 1.5rem;
+        padding-top: 3rem;
     }
     .img-darken {
         transition: 0.2s;
